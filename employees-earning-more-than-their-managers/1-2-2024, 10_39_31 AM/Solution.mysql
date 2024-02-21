@@ -1,0 +1,6 @@
+// https://leetcode.com/problems/employees-earning-more-than-their-managers
+
+# Write your MySQL query statement below
+SELECT EMP.name AS Employee
+FROM Employee AS EMP, Employee AS MGR
+WHERE EMP.managerId = MGR.id AND EMP.salary > MGR.salary;

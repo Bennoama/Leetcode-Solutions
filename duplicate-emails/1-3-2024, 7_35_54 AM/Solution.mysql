@@ -1,0 +1,7 @@
+// https://leetcode.com/problems/duplicate-emails
+
+# Write your MySQL query statement below
+select Distinct Person.email as Email
+from Person as first
+INNER JOIN Person ON first.email = Person.email
+AND first.id <> Person.id

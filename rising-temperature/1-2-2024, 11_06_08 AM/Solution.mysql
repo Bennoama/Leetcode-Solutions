@@ -1,0 +1,6 @@
+// https://leetcode.com/problems/rising-temperature
+
+# Write your MySQL query statement below
+SELECT today.id Id
+FROM Weather today, Weather yesterday
+Where (DATEDIFF(today.recordDate, yesterday.recordDate) = 1) AND (today.temperature > yesterday.temperature)

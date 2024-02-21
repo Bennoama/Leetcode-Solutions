@@ -1,0 +1,6 @@
+// https://leetcode.com/problems/delete-duplicate-emails
+
+# Write your MySQL query statement below
+delete first from Person as first
+INNER JOIN Person as Others ON
+first.email = others.email AND first.id > others.id;
